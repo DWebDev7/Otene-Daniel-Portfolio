@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/Otene-Daniel-Portfolio/',  // <-- Change this to your repo name
 })
