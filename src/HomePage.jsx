@@ -34,7 +34,7 @@ export default function HomePage() {
     <div className="font-sans text-gray-800">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full bg-white shadow z-50 flex justify-between px-6 py-4 text-sm items-center">
-        <div className="font-bold text-xl tracking-tight">wg</div>
+        <div className="font-bold text-xl tracking-tight">DWebDev</div>
         <ul className="hidden md:flex space-x-6 font-medium">
           {sections.map((section) => (
             <li key={section.id}>
@@ -144,7 +144,7 @@ export default function HomePage() {
         {/* Footer */}
         <footer className="bg-black text-white px-6 py-6 text-sm mt-32">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div>wg © 2024. All Rights Reserved.</div>
+            <div>DwebDev © 2024. All Rights Reserved.</div>
             <ul className="flex flex-wrap gap-4">
               {sections.map((section) => (
                 <li key={section.id}>

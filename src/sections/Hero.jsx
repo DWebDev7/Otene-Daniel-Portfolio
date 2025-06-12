@@ -15,12 +15,16 @@ const Hero = () => {
             </h2>
             <p className="text-2xl py-4 text-gray-700">Front End Website Developer</p>
             <div className="flex justify-center md:justify-start gap-4 mt-4">
-              <button className="rounded-full bg-purple-600 px-5 py-2 text-white hover:bg-purple-700 transition">
-                Hire Me
-              </button>
-              <button className="rounded-full border-2 border-gray-800 px-5 py-2 text-black hover:bg-gray-200 transition">
-                My Work
-              </button>
+              <a href="#contact">
+                <button className="rounded-full border-2 border-purple-700 bg-purple-600 px-5 py-2 text-white hover:bg-purple-700 transition">
+                  Hire Me
+                </button>                
+              </a>
+              <a href="#projects">
+                <button className="rounded-full border-2 border-gray-700 px-4 py-2 text-grasy-700 hover:bg-purple-700 hover:border-white hover:text-white transition">
+                  My Work
+                </button>                
+              </a>
             </div>
           </div>
 

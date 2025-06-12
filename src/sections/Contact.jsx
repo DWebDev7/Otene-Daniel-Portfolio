@@ -1,16 +1,15 @@
-# React + Vite
+import React from "react";
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+const Contact = () => {
+  return (
+    <section id="contact" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-12 bg-white text-black max-w-7xl mx-auto">
+      <div className="w-full md:h-screen h-fit md:w-1/2 mb-8 md:mb-0 text-center border-2 border-neutral-900 p-20">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Book a free call!</h2>
+        <p className="text-gray-600 max-w-sm mx-auto">
+          Simply fill out the form and I'll get back to you with the next steps in 24 hours
+        </p>
+      </div>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Otene-Daniel-Portfolio
-
-# git add . && git commit -m 'Auto-commit' && git push -u origin main
-
-you know Email.JS right, i want to use in in my react (jsx), tailwind website, so people can send me emails, teach me how to do it and do it for my, link these form to it so if it is filled and sumbitted it will send to my email,
       <form className="w-fit md:w-1/2 space-y-4 p-2 md:p-10">
         <div>
           <label className="text-red-500 font-medium text-sm">*</label> Name
@@ -52,14 +51,8 @@ you know Email.JS right, i want to use in in my react (jsx), tailwind website, s
           Submit
         </button>
       </form>
+    </section>
+  );
+};
 
-
-Turn these into a REact (jsx), Tailwind compnonent.
-<!-- Created Nav To Top -->
-<button id="back-to-top" 
-  class="fixed bottom-5 right-0 text-2xl bg-orange-500 text-black p-3 rounded-sm shadow-lg transition-all duration-300 opacity-0 scale-0 z-50">
-  <i class="bi bi-arrow-up"></i>
-</button>
-
-
-
+export default Contact;

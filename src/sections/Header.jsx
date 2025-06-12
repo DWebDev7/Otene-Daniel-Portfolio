@@ -1,4 +1,5 @@
 import { useState } from "react";
+import MobileMenu from "../components/MobileMenu";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -8,6 +9,8 @@ const Header = () => {
   };
 
   return (
+  <>
+<MobileMenu />
   <header className="fixed z-50 w-full text-white bg-purple-700 shadow-md">
     <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       {/* Logo */}
@@ -20,13 +23,12 @@ const Header = () => {
         <a href="#about" className="hover:text-white">About</a>
         <a href="#skills" className="hover:text-white">Skills</a>
         <a href="#projects" className="hover:text-white">Projects</a>
-        <a href="#contact" className="hover:text-">Contact</a>
       </nav>
 
       {/* CTA Button */}
-      <div className="cursor-pointer hidden md:block border-2 border-neutral-300 px-4 py-2 rounded-xl hover:bg-white hover:border-white hover:text-purple-700 transition">
+      <button id="contact-button" className="cursor-pointer hidden md:block border-2 border-neutral-300 px-4 py-2 rounded-xl hover:bg-white hover:border-white hover:text-purple-700 transition">
         Contact Me
-      </div>
+      </button>
 
       {/* Mobile Menu Icon */}
       <div className="md:hidden text-4xl cursor-pointer">
@@ -34,7 +36,7 @@ const Header = () => {
       </div>
     </div>
   </header>
-
+  </>
   );
 };
 
