@@ -1,11 +1,12 @@
 import { useState } from "react";
 import MobileMenu from "../components/MobileMenu";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen((prev) => !prev);
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
   };
 
   return (
@@ -26,16 +27,28 @@ const Header = () => {
       </nav>
 
       {/* CTA Button */}
-      <button id="contact-button" className="cursor-pointer hidden md:block border-2 border-neutral-300 px-4 py-2 rounded-xl hover:bg-white hover:border-white hover:text-purple-700 transition">
+      <button id="contact-button" className="cursor-pointer border-2 border-neutral-300 px-4 py-2 rounded-xl hover:bg-white hover:border-white hover:text-purple-700 transition">
         Contact Me
       </button>
 
       {/* Mobile Menu Icon */}
-      <div className="md:hidden text-4xl cursor-pointer">
-        &#8801;
-      </div>
+      <button className="md:hidden text-4xl cursor-pointer" onClick={toggleMobileNav}>
+          {isMobileNavOpen ? (
+            <FaTimes className="w-6 h-6" />
+          ) : (
+            <FaBars className="w-6 h-6" />
+          )}
+      </button>
     </div>
   </header>
+  {/* Mobile Navigation - appears when button is clicked */}
+  <div className={`md:hidden fixed w-full bg-neutral-800 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${isMobileNavOpen ? 'max-h-96' : 'max-h-0'}`}>
+    <nav className="flex justify-between items-center px-2 py-2 mt-18 w-1/2 mx-auto">
+      <a href="#about" className="text-white hover:text-purple-600">About</a>
+      <a href="#skills" className="text-white hover:text-purple-600">Skills</a>
+      <a href="#projects" className="text-white hover:text-purple-600">Portfolio</a>
+    </nav>  
+  </div>
   </>
   );
 };

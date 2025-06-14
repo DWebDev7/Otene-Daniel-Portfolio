@@ -1,12 +1,13 @@
 import React from "react";
+import { animations  } from '../components/Animations';
 
 const Contact = () => {
   return (
     <section id="contact" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-12 bg-white text-black max-w-7xl mx-auto">
-      <div className="w-full md:h-screen h-fit md:w-1/2 mb-8 md:mb-0 text-center border-2 border-neutral-900 p-20">
+      <div className="w-full md:h-screen h-fit md:w-1/2 mb-8 md:mb-0 text-center border-2 border-neutral-900 p-20" {...animations.zoomIn}>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Book a free call!</h2>
         <p className="text-gray-600 max-w-sm mx-auto">
-          Simply fill out the form and I'll get back to you with the next steps in 24 hours
+          Fill this short form. I’ll respond within 24 hours. Let’s build something that brings results.
         </p>
       </div>
 
