@@ -5,7 +5,6 @@ import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
-import MobileMenu from './components/MobileMenu'
 import BackToTopButton from './components/BackToTopButton'
 
 
@@ -18,7 +17,6 @@ export default function Page() {
             {/* Header */}
             <Header />
 
-            <MobileMenu />
 
             {/* Hero Section */}
             <Hero />
