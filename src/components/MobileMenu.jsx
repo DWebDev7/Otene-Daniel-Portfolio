@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaInstagram, FaEnvelope, FaLinkedin, FaGit, FaWhatsapp, FaWhatsappSquare, FaPhone, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaLinkedin, FaGit, FaWhatsapp, FaWhatsappSquare, FaPhone, FaTwitter, FaGithub } from "react-icons/fa";
 
 const MobileMenu = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,16 +20,19 @@ const MobileMenu = () => {
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 pointer-events-none"}`}
     >
       <div className="my-4 border-2 rounded-2xl  border-gray-500 hover:bg-purple-700  text-gray-500 hover:text-white p-2 text-center duration-500 ease-in-out">
-        <a href="#" className="flex justify-center items-center text-xl font-medium text-center gap-3">Whatsapp <FaWhatsapp /></a>
+        <a href="https://wa.me/08138758235" className="flex justify-center items-center text-xl font-medium text-center gap-3">Whatsapp <FaWhatsapp /></a>
       </div>
       <div className="my-4 border-2 rounded-2xl  border-gray-500 hover:bg-purple-700  text-gray-500 hover:text-white p-2 text-center duration-500 ease-in-out">
-        <a href="#" className="flex justify-center items-center text-xl font-medium text-center gap-3">LinkedIn <FaLinkedin /></a>
+        <a href="https://www.linkedin.com/in/daniel-otene-3533412b7?trk=contact-info" className="flex justify-center items-center text-xl font-medium text-center gap-3">LinkedIn <FaLinkedin /></a>
       </div>
       <div className="my-4 border-2 rounded-2xl  border-gray-500 hover:bg-purple-700  text-gray-500 hover:text-white p-2 text-center duration-500 ease-in-out">
-        <a href="#" className="flex justify-center items-center text-xl font-medium text-center gap-3">Twitter <FaTwitter /></a>
+        <a href="https://x.com/DWebDev7" className="flex justify-center items-center text-xl font-medium text-center gap-3">Twitter <FaTwitter /></a>
       </div>
       <div className="my-4 border-2 rounded-2xl  border-gray-500 hover:bg-purple-700  text-gray-500 hover:text-white p-2 text-center duration-500 ease-in-out">
-        <a href="#" className="flex justify-center items-center text-xl font-medium text-center gap-3">Phone <FaPhone /></a>
+        <a href="https://github.com/DWebDev7" className="flex justify-center items-center text-xl font-medium text-center gap-3">Git Hub <FaGithub /></a>
+      </div>
+      <div className="my-4 border-2 rounded-2xl  border-gray-500 hover:bg-purple-700  text-gray-500 hover:text-white p-2 text-center duration-500 ease-in-out">
+        <a href="+234 813 875 8235" className="flex justify-center items-center text-xl font-medium text-center gap-3">Phone <FaPhone /></a>
       </div>
     </div>
   );

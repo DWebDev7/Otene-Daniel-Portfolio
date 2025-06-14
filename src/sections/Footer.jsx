@@ -11,16 +11,16 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center sm:justify-end space-x-6 text-2xl">
-          <a href="https://github.com/OTG12" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/DWebDev7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub className="hover:text-gray-400 transition duration-300" />
           </a>
-          <a href="https://www.linkedin.com/in/ezekiel-joseph-otene" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/daniel-otene-3533412b7?trk=contact-info" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin className="hover:text-gray-400 transition duration-300" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <a href="https://x.com/DWebDev7" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <FaTwitter className="hover:text-gray-400 transition duration-300" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://wa.me/08138758235" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FaWhatsapp className="hover:text-gray-400 transition duration-300" />
           </a>
         </div>

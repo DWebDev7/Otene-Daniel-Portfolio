@@ -6,12 +6,14 @@ import Projects from './sections/Projects'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import MobileMenu from './components/MobileMenu'
+import BackToTopButton from './components/BackToTopButton'
 
 
 
 export default function Page() {
     return (
     <>
+        <BackToTopButton/>
         <div className="font-sans text-gray-800 bg-white min-h-screen">
             {/* Header */}
             <Header />

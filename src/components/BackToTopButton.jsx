@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaArrowUp } from 'react-icons/fa';
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,9 +21,9 @@ const BackToTopButton = () => {
     <button
       id="back-to-top"
       onClick={scrollToTop}
-      className={`fixed bottom-5 right-5 text-2xl bg-orange-500 text-black p-3 rounded-sm shadow-lg transition-all duration-300 z-50 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"}`}
+      className={`fixed bottom-5 right-5 text-3xl bg-purple-700 text-white p-3 rounded-sm shadow-lg transition-all duration-300 z-50 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"}`}
     >
-      <i className="bi bi-arrow-up"></i>
+      <div><FaArrowUp/></div>
     </button>
   );
 };

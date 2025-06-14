@@ -7,59 +7,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # Otene-Daniel-Portfolio
-
+links:
+https://www.linkedin.com/in/daniel-otene-3533412b7?trk=contact-info
+https://github.com/DWebDev7
+https://x.com/DWebDev7
+https://wa.me/08138758235
 # git add . && git commit -m 'Auto-commit' && git push -u origin main
-
-you know Email.JS right, i want to use in in my react (jsx), tailwind website, so people can send me emails, teach me how to do it and do it for my, link these form to it so if it is filled and sumbitted it will send to my email,
-      <form className="w-fit md:w-1/2 space-y-4 p-2 md:p-10">
-        <div>
-          <label className="text-red-500 font-medium text-sm">*</label> Name
-          <input type="text" placeholder="John Doe" className="w-full mt-1 p-2 rounded-md bg-gray-100 border-gray-200 border" />
-        </div>
-        <div>
-          <label className="text-red-500 font-medium text-sm">*</label> Email
-          <input type="email" placeholder="john@gmail.com" className="w-full mt-1 p-2 rounded-md  bg-gray-100 border-gray-200 border" />
-        </div>
-        <div>
-          <label className="text-red-500 font-medium text-sm">*</label> How did you find us?
-          <select className="w-full mt-1 p-2 rounded-md bg-gray-100">
-            <option>Select...</option>
-          </select>
-        </div>
-        <div>
-          <label>Your existing website</label>
-          <input type="text" placeholder="site.com" className="w-full mt-1 p-2 rounded-md  bg-gray-100 border-gray-200 border" />
-        </div>
-        <div>
-          <label className="text-red-500 font-medium text-sm">*</label> Your estimated budget
-          <select className="w-full mt-1 p-2 rounded-md  bg-gray-100 border-gray-200 border">
-            <option>Select...</option>
-          </select>
-        </div>
-        <div>
-          <label className="text-red-500 font-medium text-sm">*</label> Your goal for the site
-          <textarea
-            placeholder="How you want the site to look like/ what you want to get back from it (leads, customers, sales, etc.)/ what features will your site do..."
-            className="w-full mt-1 p-2 rounded-md  bg-gray-100 border-gray-200 border"
-            rows="4"
-          />
-        </div>
-        <div>
-          <label>Anything else you want me to know about</label>
-          <textarea placeholder="Type it here..." className="w-full mt-1 p-2 rounded-md  bg-gray-100 border-gray-200 border" rows="3" />
-        </div>
-        <button type="submit" className="w-full py-2 bg-purple-600 text-white rounded-md font-semibold hover:bg-purple-700 transition">
-          Submit
-        </button>
-      </form>
-
-
-Turn these into a REact (jsx), Tailwind compnonent.
-<!-- Created Nav To Top -->
-<button id="back-to-top" 
-  class="fixed bottom-5 right-0 text-2xl bg-orange-500 text-black p-3 rounded-sm shadow-lg transition-all duration-300 opacity-0 scale-0 z-50">
-  <i class="bi bi-arrow-up"></i>
-</button>
-
-
-
