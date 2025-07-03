@@ -42,7 +42,7 @@ const Header = () => {
     </div>
   </header>
   {/* Mobile Navigation - appears when button is clicked */}
-  <div className={`md:hidden fixed w-full bg-neutral-800 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${isMobileNavOpen ? 'max-h-96' : 'max-h-0'}`}>
+  <div className={`md:hidden fixed w-full z-40 bg-neutral-800 shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${isMobileNavOpen ? 'max-h-96' : 'max-h-0'}`}>
     <nav className="flex justify-between items-center px-2 py-2 mt-18 w-1/2 mx-auto">
       <a href="#about" className="text-white hover:text-purple-600">About</a>
       <a href="#skills" className="text-white hover:text-purple-600">Skills</a>

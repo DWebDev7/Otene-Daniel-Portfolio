@@ -32,3 +32,4 @@ Trim About text — Your current writeup is too CV-like. Focus on value for the 
 Add results-driven lines — Like “helped X client improve conversions by Y%”.
 
 Improve testimonials section — Add even 1-2 short quotes from past clients for social proof
+
