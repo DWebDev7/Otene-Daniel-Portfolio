@@ -37,7 +37,7 @@ const Projects = () => {
             <div className="aspect-video rounded-lg overflow-hidden mb-4">
             <iframe
             src="https://pixeo.netlify.app/"
-            title="Husky Jobs"
+            title="Pixeo"
             width="100%"
             height="720"
             scrolling="no"
@@ -58,7 +58,7 @@ const Projects = () => {
             <div className="aspect-video rounded-lg overflow-hidden mb-4">
             <iframe
             src="https://deh-realties.netlify.app/"
-            title="Husky Jobs"
+            title="Deh Realties"
             width="100%"
             height="720"
             scrolling="no"
@@ -74,11 +74,11 @@ const Projects = () => {
             </div>
         </a>
         {/* Project 4 */}
-        <a href='https://maxchop.netlify.app/#' target='_blank' className="bg-neutral-800 p-5 rounded-2xl shadow-lg hover:shadow-purple-500/50 transition max-full" {...animations.slideRight}>
+        <a href='https://maxchop.netlify.app/' target='_blank' className="bg-neutral-800 p-5 rounded-2xl shadow-lg hover:shadow-purple-500/50 transition max-full" {...animations.slideRight}>
             <div className="aspect-video rounded-lg overflow-hidden mb-4">
             <iframe
             src="https://maxchop.netlify.app/#"
-            title="Husky Jobs"
+            title="Max Chop "
             width="100%"
             height="720"
             scrolling="no"
@@ -89,6 +89,26 @@ const Projects = () => {
             <p className="mb-4 text-xl">Menu display for a chef brand — fast and mobile-friendly.</p>
             <div className="flex gap-2 text-purple-400 justify-center">
                 <svg fill="#545454" width="30px" height="30px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#545454"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>html5</title> <path d="M11.677 13.196l-0.289-3.387 12.536 0.004 0.287-3.268-16.421-0.004 0.87 9.983h11.374l-0.406 4.27-3.627 1.002-3.683-1.009-0.234-2.63h-3.252l0.411 5.198 6.757 1.807 6.704-1.798 0.927-10.166h-11.954zM2.914 1.045h26.172l-2.38 26.874-10.734 3.037-10.673-3.038z"></path> </g></svg>
+                <svg fill="#545454" width="30px" height="30px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#545454"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="c133de6af664cd4f011a55de6b001b19"> <path display="inline" d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302 H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606 l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062 l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z"> </path> </g> </g></svg>
+                <svg fill="#545454" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"></path></g></svg>
+            </div>
+        </a>
+        {/* Project 5 */}
+        <a href='https://wareweb-8kpy5.sevalla.app/' target='_blank' className="bg-neutral-800 p-5 rounded-2xl shadow-lg hover:shadow-purple-500/50 transition max-full" {...animations.slideRight}>
+            <div className="aspect-video rounded-lg overflow-hidden mb-4">
+            <iframe
+            src="https://wareweb-8kpy5.sevalla.app/"
+            title="WareWeb"
+            width="100%"
+            height="720"
+            scrolling="no"
+            className="border-none pointer-events-none overflow-hidden rounded-xl"
+            />
+            </div>
+            <h3 className="text-md font-semibold mb-2 text-purple-600">WareWeb</h3>
+            <p className="mb-4 text-xl">Your warehouse, organized — real-time tracking, clean interface, zero hassle.</p>
+            <div className="flex gap-2 text-purple-400 justify-center">
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0)"> <path d="M11.9135 0C5.82079 4.36975e-07 6.20126 2.65599 6.20126 2.65599L6.20805 5.40757H12.0222V6.23372H3.89871C3.89871 6.23372 0 5.78926 0 11.969C-4.34699e-07 18.1488 3.40288 17.9296 3.40288 17.9296H5.43374V15.062C5.43374 15.062 5.32428 11.6413 8.78229 11.6413C12.2403 11.6413 14.5489 11.6413 14.5489 11.6413C14.5489 11.6413 17.7887 11.6939 17.7887 8.4937C17.7887 5.29347 17.7887 3.20221 17.7887 3.20221C17.7887 3.20221 18.2806 0 11.9135 0ZM8.70758 1.85032C9.28604 1.85032 9.75357 2.3203 9.75357 2.90179C9.75357 3.48328 9.28604 3.95326 8.70758 3.95326C8.12912 3.95326 7.66158 3.48328 7.66158 2.90179C7.66158 2.3203 8.12912 1.85032 8.70758 1.85032Z" fill="#545454"></path> <path d="M12.0867 24C18.1794 24 17.7989 21.344 17.7989 21.344L17.7921 18.5924H11.978V17.7663H20.1014C20.1014 17.7663 24.0002 18.2108 24.0002 12.031C24.0002 5.85123 20.5973 6.07038 20.5973 6.07038H18.5664V8.93803C18.5664 8.93803 18.6759 12.3587 15.2179 12.3587C11.7598 12.3587 9.4513 12.3587 9.4513 12.3587C9.4513 12.3587 6.21143 12.3061 6.21143 15.5063C6.21143 18.7065 6.21143 20.7978 6.21143 20.7978C6.21143 20.7978 5.71953 24 12.0867 24ZM15.2926 22.1497C14.7141 22.1497 14.2466 21.6797 14.2466 21.0982C14.2466 20.5167 14.7141 20.0468 15.2926 20.0468C15.871 20.0468 16.3386 20.5167 16.3386 21.0982C16.3386 21.6797 15.871 22.1497 15.2926 22.1497Z" fill="#545454"></path> </g> <defs> <clipPath id="clip0"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg>
                 <svg fill="#545454" width="30px" height="30px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" stroke="#545454"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="c133de6af664cd4f011a55de6b001b19"> <path display="inline" d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302 H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606 l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062 l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z"> </path> </g> </g></svg>
                 <svg fill="#545454" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"></path></g></svg>
             </div>

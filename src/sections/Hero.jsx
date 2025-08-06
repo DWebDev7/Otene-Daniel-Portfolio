@@ -14,7 +14,8 @@ const Hero = () => {
             <h2 className="text-5xl font-bold leading-tight">
               I'm <span className="text-purple-600">Otene Daniel</span>
             </h2>
-            <p className="text-xl py-4 text-gray-700">I build fast, functional, and beautiful websites that help your business grow.</p>
+            <div className="text-sm text-gray-100 my-4 w-fit md:mx-0 mx-auto"><p className=' px-3 py-1 text-center bg-purple-600 '> — Your Full-Stack Web Expert</p></div>
+            <p className="text-xl pb-3 text-gray-700">I design, build, and deploy high-performance websites and web applications that do more than just look good — they deliver results.</p>
             <div className="flex justify-center md:justify-start gap-4 mt-4">
               <a href="#contact">
                 <button className="cursor-pointer rounded-full border-2 border-purple-700 bg-purple-600 px-5 py-2 text-white hover:bg-white hover:text-gray-700 hover:border-gray-700 transition">

@@ -10,6 +10,7 @@ import {
   FaBootstrap,
   FaFigma,
   FaCode,
+  FaPython,
 } from "react-icons/fa";
 import { FaGear } from 'react-icons/fa6';
 
@@ -19,6 +20,7 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiHtml5,
+  SiDjango,
 } from "react-icons/si";
 
 
@@ -26,19 +28,16 @@ export default function Skills(){
 
 
   const skills = [
+    { icon: <FaPython className="text-blue-600" />, label: "Python" },
     { icon: <FaReact className="text-blue-400" />, label: "React" },
+    { icon: <SiTailwindcss className="text-teal-500" />,label: "Tailwind CSS"},
     { icon: <SiNextdotjs />, label: "Next.js" },
     { icon: <SiTypescript className="text-blue-600" />, label: "TypeScript" },
-    {
-      icon: <SiTailwindcss className="text-teal-500" />,
-      label: "Tailwind CSS",
-    },
-    { icon: <FaBootstrap className="text-purple-600" />, label: "Bootstrap" },
+    { icon: <SiDjango className="text-emerald-700" />, label: "Django" },
     { icon: <FaGitAlt className="text-orange-500" />, label: "Git" },
     { icon: <FaGithub />, label: "GitHub" },
     { icon: <SiPostman className="text-orange-400" />, label: "Postman" },
-    { icon: <FaFigma className="text-pink-500" />, label: "Figma" },
-    { icon: <FaCode className="text-blue-500" />, label: "VS Code" },
+    { icon: <FaCode className="text-blue-500" />, label: "VS Code" }
   ];
 
 

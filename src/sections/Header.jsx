@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MobileMenu from "../components/MobileMenu";
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '/assets/logo.png'
 
 const Header = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -16,7 +17,8 @@ const Header = () => {
     <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       {/* Logo */}
       <div>
-        <h1 className="text-2xl font-bold">DWebDev</h1>
+        <h1 className="text-2xl font-bold sm:block hidden">DWebDev</h1>
+        <img src={logo} alt="DWebDev Logo" className="w-13 h-13 sm:hidden block" />
       </div>
 
       {/* Navigation Links */}
