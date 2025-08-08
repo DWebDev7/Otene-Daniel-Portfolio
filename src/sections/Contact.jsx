@@ -101,7 +101,15 @@ const Contact = () => {
         </p>
       </div>
 
-      <form ref={form} onSubmit={sendEmail} className="w-fit md:w-1/2 space-y-4 p-2 md:p-10">
+      <form
+        action="https://formsubmit.co/otenedaniel007@gmail.com"
+        method="POST"
+        className="w-fit md:w-1/2 space-y-4 p-2 md:p-10"
+      >
+        {/* Hidden fields for Formsubmit settings */}
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://your-portfolio-url.com/thank-you" />
+
         <div>
           <label className="text-red-500 font-medium text-sm">*</label> Name
           <input
@@ -177,6 +185,7 @@ const Contact = () => {
           Submit
         </button>
       </form>
+
     </section>
   );
 };
