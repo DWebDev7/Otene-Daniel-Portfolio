@@ -108,7 +108,6 @@ const Contact = () => {
       >
         {/* Hidden fields for Formsubmit settings */}
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://your-portfolio-url.com/thank-you" />
 
         <div>
           <label className="text-red-500 font-medium text-sm">*</label> Name
