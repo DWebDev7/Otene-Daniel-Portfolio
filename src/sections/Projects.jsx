@@ -1,4 +1,5 @@
 import React from 'react'
+import WareWebImg from '/assets/wareweb-preview.png'
 import { animations  } from '../components/Animations';
 
 const Projects = () => {
@@ -96,13 +97,10 @@ const Projects = () => {
         {/* Project 5 */}
         <a href='https://wareweb-8kpy5.sevalla.app/' target='_blank' className="bg-neutral-800 p-5 rounded-2xl shadow-lg hover:shadow-purple-500/50 transition max-full" {...animations.slideRight}>
             <div className="aspect-video rounded-lg overflow-hidden mb-4">
-            <iframe
-            src="https://wareweb-8kpy5.sevalla.app/"
-            title="WareWeb"
-            width="100%"
-            height="720"
-            scrolling="no"
-            className="border-none pointer-events-none overflow-hidden rounded-xl"
+            <img 
+            src={WareWebImg} 
+            alt="WareWeb Preview" 
+            class="w-full h-[720px] object-cover rounded-xl shadow-lg border border-gray-200 transition-all duration-300 cursor-pointer"
             />
             </div>
             <h3 className="text-md font-semibold mb-2 text-purple-600">WareWeb</h3>
