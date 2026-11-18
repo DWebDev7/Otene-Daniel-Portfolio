@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { FaInstagram, FaEnvelope, FaLinkedin, FaGit, FaWhatsapp, FaWhatsappSquare, FaPhone, FaTwitter, FaGithub, FaTimes } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp, FaPhone, FaTwitter, FaGithub, FaTimes } from "react-icons/fa";
+
+const contacts = [
+  { label: "Whatsapp", href: "https://wa.me/2348138758235", icon: <FaWhatsapp /> },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/daniel-otene-3533412b7?trk=contact-info", icon: <FaLinkedin /> },
+  { label: "Twitter", href: "https://x.com/DWebDev7", icon: <FaTwitter /> },
+  { label: "Git Hub", href: "https://github.com/DWebDev7", icon: <FaGithub /> },
+  { label: "Phone", href: "tel:+2348138758235", icon: <FaPhone /> },
+];
 
 const MobileMenu = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,14 +22,9 @@ const MobileMenu = () => {
     }
   }, []);
 
-  // Prevent scrolling when menu is open
   useEffect(() => {
-    if (isVisible) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    
+    document.body.style.overflow = isVisible ? 'hidden' : 'auto';
+
     return () => {
       document.body.style.overflow = 'auto';
     };
@@ -29,42 +32,37 @@ const MobileMenu = () => {
 
   return (
     <>
-      {/* Dark overlay */}
-      <div 
-        className={`fixed inset-0 bg-black z-40 transition-opacity duration-500 ${isVisible ? 'opacity-50' : 'opacity-0 pointer-events-none'}`}
+      <div
+        className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
         onClick={() => setIsVisible(false)}
       />
-      
-      {/* Menu container */}
+
       <div
-        className={`fixed inset-0 flex items-center justify-center z-50 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
+        onClick={() => setIsVisible(false)}
       >
-        <div className="relative bg-gray-100 rounded-xl w-full max-w-md mx-4 p-6 shadow-2xl">
-          {/* Close button */}
-          <button 
+        <div
+          className={`relative mx-4 w-full max-w-md rounded-3xl border border-white/10 bg-[#1f1a2c] p-6 shadow-2xl transition-transform duration-300 ${isVisible ? 'translate-y-0' : 'translate-y-4'}`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
             onClick={() => setIsVisible(false)}
-            className="absolute top-4 right-4 text-gray-900 hover:text-black text-2xl cursor-pointer"
+            aria-label="Close"
+            className="absolute right-4 top-4 cursor-pointer text-xl text-[#a9a3ba] transition hover:text-white"
           >
             <FaTimes />
           </button>
-          
-          {/* Menu items */}
-          <div className="space-y-4 mt-8">
-            <div className="border-2 rounded-2xl border-gray-500 hover:bg-purple-700 text-gray-700 hover:text-white p-3 text-center duration-500 ease-in-out">
-              <a href="https://wa.me/08138758235" className="flex justify-center items-center text-xl font-medium gap-3">Whatsapp <FaWhatsapp /></a>
-            </div>
-            <div className="border-2 rounded-2xl border-gray-500 hover:bg-purple-700 text-gray-700 hover:text-white p-3 text-center duration-500 ease-in-out">
-              <a href="https://www.linkedin.com/in/daniel-otene-3533412b7?trk=contact-info" className="flex justify-center items-center text-xl font-medium gap-3">LinkedIn <FaLinkedin /></a>
-            </div>
-            <div className="border-2 rounded-2xl border-gray-500 hover:bg-purple-700 text-gray-700 hover:text-white p-3 text-center duration-500 ease-in-out">
-              <a href="https://x.com/DWebDev7" className="flex justify-center items-center text-xl font-medium gap-3">Twitter <FaTwitter /></a>
-            </div>
-            <div className="border-2 rounded-2xl border-gray-500 hover:bg-purple-700 text-gray-700 hover:text-white p-3 text-center duration-500 ease-in-out">
-              <a href="https://github.com/DWebDev7" className="flex justify-center items-center text-xl font-medium gap-3">Git Hub <FaGithub /></a>
-            </div>
-            <div className="border-2 rounded-2xl border-gray-500 hover:bg-purple-700 text-gray-700 hover:text-white p-3 text-center duration-500 ease-in-out">
-              <a href="tel:+2348138758235" className="flex justify-center items-center text-xl font-medium gap-3">Phone <FaPhone /></a>
-            </div>
+
+          <div className="mt-8 space-y-3">
+            {contacts.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/15 p-3 text-lg font-medium text-neutral-200 transition duration-300 hover:border-purple-600 hover:bg-purple-600 hover:text-white"
+              >
+                {item.label} {item.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>

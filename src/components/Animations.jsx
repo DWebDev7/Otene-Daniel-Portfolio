@@ -1,85 +1,42 @@
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-// Initialize AOS with default settings
 export const initAnimations = () => {
   AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true, // Animation only happens once
-    mirror: false, // Don't animate out while scrolling up
+    duration: 700,
+    easing: 'ease-out-cubic',
+    once: true,
+    mirror: false,
+    offset: 60,
+    disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   });
 };
 
-// Animation presets
+const preset = (name, delay = '0') => ({
+  'data-aos': name,
+  'data-aos-delay': delay,
+});
+
 export const animations = {
-  // Fade animations
-  fadeUp: {
-    'data-aos': 'fade-up',
-    'data-aos-delay': '0',
-  },
-  fadeDown: {
-    'data-aos': 'fade-down',
-    'data-aos-delay': '0',
-  },
-  fadeLeft: {
-    'data-aos': 'fade-left',
-    'data-aos-delay': '0',
-  },
-  fadeRight: {
-    'data-aos': 'fade-right',
-    'data-aos-delay': '0',
-  },
-  
-  // Slide animations
-  slideUp: {
-    'data-aos': 'slide-up',
-    'data-aos-delay': '0',
-  },
-  slideDown: {
-    'data-aos': 'slide-down',
-    'data-aos-delay': '0',
-  },
-  slideLeft: {
-    'data-aos': 'slide-left',
-    'data-aos-delay': '0',
-  },
-  slideRight: {
-    'data-aos': 'slide-right',
-    'data-aos-delay': '0',
-  },
-  
-  // Zoom animations
-  zoomIn: {
-    'data-aos': 'zoom-in',
-    'data-aos-delay': '0',
-  },
-  zoomOut: {
-    'data-aos': 'zoom-out',
-    'data-aos-delay': '0',
-  },
-  
-  // Flip animations
-  flipUp: {
-    'data-aos': 'flip-up',
-    'data-aos-delay': '0',
-  },
-  flipDown: {
-    'data-aos': 'flip-down',
-    'data-aos-delay': '0',
-  },
-  
-  // Custom animations with delays
-  fadeUp200: {
-    'data-aos': 'fade-up',
-    'data-aos-delay': '200',
-  },
-  fadeUp400: {
-    'data-aos': 'fade-up',
-    'data-aos-delay': '400',
-  },
-  
-  // Special effects
+  fadeUp: preset('fade-up'),
+  fadeDown: preset('fade-down'),
+  fadeLeft: preset('fade-left'),
+  fadeRight: preset('fade-right'),
+
+  slideUp: preset('slide-up'),
+  slideDown: preset('slide-down'),
+  slideLeft: preset('slide-left'),
+  slideRight: preset('slide-right'),
+
+  zoomIn: preset('zoom-in'),
+  zoomOut: preset('zoom-out'),
+
+  flipUp: preset('flip-up'),
+  flipDown: preset('flip-down'),
+
+  fadeUp200: preset('fade-up', '200'),
+  fadeUp400: preset('fade-up', '400'),
+
   popUp: {
     'data-aos': 'zoom-in',
     'data-aos-easing': 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
@@ -87,5 +44,5 @@ export const animations = {
   bounceIn: {
     'data-aos': 'fade-up',
     'data-aos-easing': 'cubic-bezier(0.215, 0.61, 0.355, 1)',
-  }
+  },
 };
